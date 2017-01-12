@@ -11,7 +11,7 @@ a:hover {
 .btn-primary {
   background-color: $primary-color;
   border-radius: 3px;
-  color: #FFF;
+  color: $light-text-color;
   display: inline-block;
   font-family: $font-medium;
   margin-bottom: 1rem;
@@ -21,6 +21,7 @@ a:hover {
 
   &:hover {
     background-color: $hover-color;
+    color: $light-text-color;
   }
 }
 
