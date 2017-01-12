@@ -10,9 +10,26 @@ pre, table, fieldset, hr {
   margin-top: 0;
 }
 
-h1, h2, h3, h4, h5, h6, b {
+h1, h2, h3, h4, h5, h6, b, strong {
   font-family: $font-medium;
   font-weight: normal;
+}
+
+a {
+  color: $dark-gray-color;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+code {
+  background-color: lighten($gray-color, 25%);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 0.5rem;
 }
 
 h1 svg {
@@ -81,13 +98,6 @@ main p, main li {
   font-size: 1.75rem;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-}
-
-code {
-  background-color: lighten($gray-color, 25%);
-  border-radius: 3px;
-  display: inline-block;
-  padding: 0 0.5rem;
 }
 
 .col-resources p a, .col-resources li a {
