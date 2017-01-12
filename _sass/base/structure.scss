@@ -17,6 +17,10 @@ main {
     @include center;
     position: relative;
   }
+
+  .wrap-main--resources {
+    min-height: 100vh;
+  }
 }
 
 footer {
@@ -74,5 +78,20 @@ footer {
 
   @media #{$large-up} {
     right: 0;
+  }
+}
+
+.col-nav {
+  @media #{$medium-up} {
+    float: left;
+    width: 14.75rem;
+    padding-right: 1rem;
+    position: fixed;
+  }
+}
+
+.col-resources {
+  @media #{$medium-up} {
+    margin-left: 15.75rem;
   }
 }

@@ -1,5 +1,11 @@
 a {
+  color: $dark-gray-color;
   transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-color;
 }
 
 .btn-primary {
@@ -15,5 +21,42 @@ a {
 
   &:hover {
     background-color: $hover-color;
+  }
+}
+
+.btn-top {
+  font-size: 0.8rem;
+
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.col-resources p a.btn-file {
+  background-color: lighten($gray-color, 25%);
+  border-radius: 3px;
+  border-bottom: 0;
+  display: inline-block;
+  font-family: $font-regular;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+
+  svg {
+    margin-right: 0.2rem;
+    position: relative;
+    top: 3px;
+
+    path {
+      fill: $dark-gray-color;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    color: $light-text-color;
+  }
+
+  &:hover svg path {
+    fill: $light-text-color;
   }
 }
